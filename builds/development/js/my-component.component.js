@@ -25,7 +25,7 @@ System.register(['angular2/core'], function(exports_1, context_1) {
                 MyComponent = __decorate([
                     core_1.Component({
                         selector: 'my-component',
-                        template: "\n    <h1>Hello {{name}}</h1>\n  "
+                        template: "\n    <h1>Hello {{name}}</h1> //Data binding with interpolation\n  "
                     }), 
                     __metadata('design:paramtypes', [])
                 ], MyComponent);
