@@ -4,7 +4,7 @@ import {Component} from 'angular2/core';
   selector: 'my-component',
   template: `
     <h1>Hello {{name}}</h1>
-    <img [src] = "imageUrl" alt="Kodkod" height="360" width="640" />
+    <img bind-src = "imageUrl"  />
   `
 })
 
@@ -13,6 +13,6 @@ export class MyComponent {
   imageUrl;
   constructor(){
     this.name = 'John Doe';
-    this.imageUrl = '../../../images/Kodkod2.jpg';
+    this.imageUrl = 'http://lorempixel.com/400/200';
   }
 }
