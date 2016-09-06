@@ -26,7 +26,7 @@ System.register(['angular2/core'], function(exports_1, context_1) {
                 MyComponent = __decorate([
                     core_1.Component({
                         selector: 'my-component',
-                        template: "\n    <h1>Hello {{name}}</h1>\n    <img [src] = \"imageUrl\" />\n  "
+                        template: "\n    <h1>Hello {{name}}</h1>\n    <img src = \"{{imageUrl}}\" alt=\"Kodkod\" height=\"360\" width=\"640\" />\n  "
                     }), 
                     __metadata('design:paramtypes', [])
                 ], MyComponent);

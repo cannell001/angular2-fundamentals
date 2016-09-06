@@ -4,7 +4,7 @@ import {Component} from 'angular2/core';
   selector: 'my-component',
   template: `
     <h1>Hello {{name}}</h1>
-    <img [src] = "imageUrl" />
+    <img src = "{{imageUrl}}" alt="Kodkod" height="360" width="640" />
   `
 })
 
