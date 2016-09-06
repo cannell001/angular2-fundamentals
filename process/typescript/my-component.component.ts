@@ -6,7 +6,7 @@ import {Component} from 'angular2/core';
     <h1>Hello {{name}}</h1>
     <img [src] = "imageUrl"  />
     <br />
-    <button [class.isActive] = "isActive">Button</button>
+    <button [style.background-color] = "isActive ? 'red':'green'">Button</button>
   `
 })
 
