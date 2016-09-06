@@ -21,11 +21,12 @@ System.register(['angular2/core'], function(exports_1, context_1) {
             MyComponent = (function () {
                 function MyComponent() {
                     this.name = 'John Doe';
+                    this.imageUrl = 'http://lorempixel.com/400/200';
                 }
                 MyComponent = __decorate([
                     core_1.Component({
                         selector: 'my-component',
-                        template: "\n    <h1>Hello {{name}}</h1>\n  "
+                        template: "\n    <h1>Hello {{name}}</h1>\n    <img [src] = \"imageUrl\" />\n  "
                     }), 
                     __metadata('design:paramtypes', [])
                 ], MyComponent);
