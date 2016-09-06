@@ -24,10 +24,13 @@ System.register(['angular2/core'], function(exports_1, context_1) {
                     this.imageUrl = 'images/Kodkod2.jpg';
                     this.isActive = true;
                 }
+                MyComponent.prototype.changeMessage = function () {
+                    this.clickMessage = "Hello World";
+                };
                 MyComponent = __decorate([
                     core_1.Component({
                         selector: 'my-component',
-                        template: "\n    <h1>Hello {{name}}</h1>\n    <img [src] = \"imageUrl\"  />\n    <br />\n    <button [style.background-color] = \"isActive ? 'red':'green'\">Button</button>\n  "
+                        template: "\n    <h1>Hello {{name}}</h1>\n    <img [src] = \"imageUrl\"  />\n    <br />\n    <button (click) = \"changeMessage()\">Button</button>\n    <h1>{{clickMessage}}</h1>\n  "
                     }), 
                     __metadata('design:paramtypes', [])
                 ], MyComponent);

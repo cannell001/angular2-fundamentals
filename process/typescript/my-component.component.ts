@@ -6,7 +6,8 @@ import {Component} from 'angular2/core';
     <h1>Hello {{name}}</h1>
     <img [src] = "imageUrl"  />
     <br />
-    <button [style.background-color] = "isActive ? 'red':'green'">Button</button>
+    <button (click) = "changeMessage()">Button</button>
+    <h1>{{clickMessage}}</h1>
   `
 })
 
@@ -14,9 +15,14 @@ export class MyComponent {
   name
   imageUrl;
   isActive;
+  clickMessage;
   constructor(){
     this.name = 'John Doe';
     this.imageUrl = 'images/Kodkod2.jpg';
     this.isActive = true;
+  }
+
+  changeMessage(){
+    this.clickMessage = "Hello World";
   }
 }
