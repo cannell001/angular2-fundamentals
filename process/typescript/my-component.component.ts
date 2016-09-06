@@ -4,15 +4,19 @@ import {Component} from 'angular2/core';
   selector: 'my-component',
   template: `
     <h1>Hello {{name}}</h1>
-    <img bind-src = "imageUrl"  />
+    <img [src] = "imageUrl"  />
+    <br />
+    <button [class.isActive] = "isActive">Button</button>
   `
 })
 
 export class MyComponent {
   name
   imageUrl;
+  isActive;
   constructor(){
     this.name = 'John Doe';
-    this.imageUrl = 'http://lorempixel.com/400/200';
+    this.imageUrl = 'images/Kodkod2.jpg';
+    this.isActive = true;
   }
 }
